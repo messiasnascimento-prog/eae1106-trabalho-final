@@ -1,0 +1,13 @@
+# Dependências do projeto — Educação e Desemprego na América Latina
+# Instale com:  pip install -r requirements.txt
+#
+# Versões EXATAS testadas e validadas no projeto (reprodutibilidade máxima).
+# O wbgapi é opcional: se não for instalado (ou não houver internet),
+# o código usa automaticamente os dados de reserva offline.
+
+pandas==3.0.3
+numpy==2.4.6
+matplotlib==3.10.9
+seaborn==0.13.2
+scipy==1.17.1
+wbgapi==1.0.14

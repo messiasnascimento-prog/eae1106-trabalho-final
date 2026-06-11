@@ -1,0 +1,60 @@
+# Investimento Público em Educação e Desemprego na América Latina
+
+**Disciplina:** EAE1106 – Métodos Computacionais para Economia
+**Prof.:** Arthur Viaro — USP, 1º Semestre de 2026
+**Autor:** Messias Victor Assunção Ribeiro do Nascimento (trabalho individual)
+
+## Pergunta de pesquisa
+Existe relação entre o gasto público em educação (% do PIB) e a taxa de
+desemprego nos países da América Latina na última década (2010–2022)?
+
+## Fonte e dados
+World Bank Open Data (https://databank.worldbank.org) — indicadores:
+- `SE.XPD.TOTL.GD.ZS` — Gasto público em educação (% do PIB)
+- `SL.UEM.TOTL.ZS` — Taxa de desemprego (% da força de trabalho)
+
+Os dados brutos foram obtidos da API do Banco Mundial (via `wbgapi`) e estão
+versionados como SNAPSHOT em CSV, para reprodutibilidade exata:
+- `dados_brutos_paises.csv`        (séries por país — 10 países × 13 anos)
+- `dados_brutos_regional_LCN.csv`  (agregado regional América Latina e Caribe)
+
+O notebook reconstrói TODA a análise a partir desses CSVs. A proveniência (como o
+snapshot foi coletado da API) está documentada e é reexecutável em
+`coletar_dados_api.py`.
+
+Link dos dados brutos (repositório do grupo):
+  >>> COLE AQUI A URL DO GITHUB APÓS O PUSH <<<
+  Ex.: https://github.com/<seu-usuario>/<repo>/blob/main/dados_brutos_paises.csv
+
+====================================================================
+COMO REPRODUZIR
+====================================================================
+
+>> OPÇÃO A — Notebook completo (recomendado p/ avaliação)
+   Dê DUPLO-CLIQUE em:  abrir_notebook.bat
+   No Jupyter, clique em "Run > Run All Cells".
+   (ou abra analise_banco_mundial_FINAL.ipynb no VSCode/Jupyter)
+
+>> OPÇÃO B — Só regenerar os gráficos
+   Dê DUPLO-CLIQUE em:  executar.bat
+   Gera os 5 PNGs (fig1..fig5) a partir dos CSVs.
+
+>> OPÇÃO C — Linha de comando
+   pip install -r requirements.txt
+   python gerar_graficos.py
+
+Requisito único: Python 3 instalado (https://www.python.org/downloads/),
+marcando "Add Python to PATH" na instalação.
+
+====================================================================
+ARQUIVOS DO PROJETO
+====================================================================
+- analise_banco_mundial_FINAL.ipynb  Notebook completo (análise + gráficos)
+- dados_brutos_paises.csv            Dados brutos por país (snapshot)
+- dados_brutos_regional_LCN.csv      Dados brutos do agregado regional (snapshot)
+- coletar_dados_api.py               Proveniência: coleta da API do Banco Mundial
+- gerar_graficos.py                  Script que regenera só os gráficos
+- requirements.txt                   Dependências (versões exatas)
+- executar.bat / abrir_notebook.bat  Atalhos de duplo-clique (Windows)
+- relatorio_final - Messias.pdf      Relatório final
+- fig1..fig5 .png                    Gráficos gerados

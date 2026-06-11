@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Configurações locais do Claude Code (não fazem parte da entrega)
+.claude/
+
+# Saídas intermediárias geradas pela execução (dados tratados NÃO são versionados)
+dados_educacao_desemprego_AL.csv
+dados_paises_AL.csv
