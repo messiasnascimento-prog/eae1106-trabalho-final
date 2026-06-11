@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Investimento Público em Educação e Desemprego na América Latina</title>
+<style>
+  @page { size: A4; margin: 2.2cm 2.4cm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    color: #222; font-size: 11pt; line-height: 1.5; margin: 0;
+  }
+  .capa { text-align: center; margin-bottom: 6px; }
+  .capa .univ { font-size: 10.5pt; color: #333; line-height: 1.45; }
+  .titulo {
+    font-size: 20pt; font-weight: 700; color: #1f3864;
+    margin: 26px 0 4px; line-height: 1.2;
+  }
+  .subtitulo { font-size: 12pt; color: #555; margin-bottom: 22px; }
+  .autor { font-size: 11pt; color: #333; line-height: 1.5; margin-bottom: 6px; }
+  .regua { border: none; border-top: 2px solid #1f3864; margin: 18px 0; }
+  h2 {
+    color: #1f3864; font-size: 14pt; margin: 22px 0 8px;
+    border-bottom: 1px solid #cdd6e6; padding-bottom: 3px;
+  }
+  h3 { color: #2e4d7b; font-size: 12pt; margin: 16px 0 6px; }
+  p { margin: 8px 0; text-align: justify; }
+  ul { margin: 6px 0 6px 4px; padding-left: 20px; }
+  li { margin: 4px 0; text-align: justify; }
+  .pergunta {
+    background: #dce6f4; border-left: 4px solid #1f3864;
+    padding: 10px 14px; margin: 12px 24px; text-align: center;
+    font-weight: 700; color: #1f3864;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 10pt; }
+  th { background: #1f3864; color: #fff; padding: 7px 9px; text-align: left; font-weight: 600; }
+  td { padding: 6px 9px; border-bottom: 1px solid #dfe4ee; }
+  tbody tr:nth-child(even) { background: #eef2f9; }
+  .num td:not(:first-child) { text-align: center; }
+  figure { margin: 14px 0; text-align: center; page-break-inside: avoid; }
+  figure img { max-width: 100%; height: auto; border: 1px solid #e2e2e2; }
+  figcaption { font-size: 8.8pt; color: #666; font-style: italic; margin-top: 5px; text-align: justify; }
+  .nota { font-size: 8.8pt; color: #777; border-top: 1px solid #e0e0e0; padding-top: 6px; margin-top: 8px; }
+  .refs p { margin: 5px 0; font-size: 9.5pt; }
+  .quebra { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<div class="capa">
+  <div class="univ">
+    UNIVERSIDADE DE SÃO PAULO<br>
+    Faculdade de Economia, Administração, Contabilidade e Atuária<br>
+    Departamento de Economia — EAE1106
+  </div>
+  <div class="titulo">Investimento Público em Educação e Taxa de Desemprego na América Latina</div>
+  <div class="subtitulo">Uma Análise Descritiva da Última Década</div>
+  <div class="autor">
+    Messias Victor Assunção Ribeiro do Nascimento<br>
+    Prof. Arthur Viaro — 1º Semestre de 2026<br>
+    São Paulo, junho de 2026
+  </div>
+</div>
+<hr class="regua">
+
+<h2>1. Introdução e Pergunta Econômica</h2>
+<p>A compreensão da dinâmica entre investimento público em educação e desempenho do mercado de
+trabalho é um dos pilares centrais da macroeconomia do desenvolvimento. Sob a ótica da
+<strong>Teoria do Capital Humano</strong> (Becker, 1964; Mincer, 1974), gastos governamentais em
+educação não devem ser encarados meramente como despesas correntes, mas sim como investimentos
+estratégicos de longo prazo capazes de aumentar a produtividade marginal do trabalho, impulsionar a
+inovação e alinhar a oferta de habilidades às demandas de um ecossistema produtivo em constante
+modernização.</p>
+<p>Na última década, a América Latina enfrentou severos desafios estruturais: armadilhas de baixa
+produtividade, transições demográficas aceleradas e choques macroeconômicos que reconfiguraram
+seus mercados ocupacionais. A pandemia de COVID-19 (2020–2021) agravou ainda mais esse quadro,
+elevando abruptamente as taxas de desemprego em toda a região. Nesse contexto, a pergunta de
+pesquisa deste trabalho é:</p>
+<div class="pergunta">Existe relação entre o gasto público em educação (% do PIB) e a taxa de
+desemprego nos países da América Latina na última década?</div>
+<p>A relevância econômica da questão reside na capacidade de fornecer subsídios empíricos para o
+desenho de políticas públicas que transformem o orçamento educacional em um motor de geração de
+emprego qualificado e redução do <em>skills mismatch</em> — o descompasso entre as qualificações
+ofertadas pelos trabalhadores e as exigências do mercado.</p>
+
+<h2>2. Hipótese Empírica</h2>
+<p>A hipótese central fundamenta-se na premissa de que o investimento público em educação atua como
+catalisador para a elevação da produtividade e da qualificação da força de trabalho. Sob a ótica da
+teoria econômica, pressupõe-se que um incremento sustentado nos gastos em educação (% do PIB)
+resulte, no longo prazo, em redução do desemprego estrutural, ao mitigar o <em>skills mismatch</em>.</p>
+<p>Para fins de investigação descritiva, a hipótese desdobra-se em três dinâmicas observáveis:</p>
+<ul>
+  <li><strong>Correlação negativa:</strong> países com maior gasto em educação apresentam, em média,
+  menores taxas de desemprego.</li>
+  <li><strong>Defasagem temporal (lag):</strong> o retorno do investimento educacional não é imediato;
+  espera-se que a correlação negativa seja mais evidente ao se analisar o efeito defasado em 2 anos.</li>
+  <li><strong>Assimetria entre grupos:</strong> o grupo de países com 'Alto Investimento' (acima da
+  mediana) apresentará medianas de desemprego inferiores ao grupo de 'Baixo Investimento'.</li>
+</ul>
+
+<h2>3. Dados</h2>
+<p>Os dados foram obtidos diretamente da <strong>API do Banco Mundial</strong> (World Bank Open Data)
+via biblioteca Python <em>wbgapi</em>. Foram coletados dois indicadores para um conjunto de 18 países
+da América Latina e Caribe no período de <strong>2010 a 2022</strong>:</p>
+<table>
+  <thead><tr><th>Código</th><th>Indicador</th><th>Unidade</th><th>Fonte</th></tr></thead>
+  <tbody>
+    <tr><td>SE.XPD.TOTL.GD.ZS</td><td>Gasto público em educação</td><td>% do PIB</td><td>World Bank / UNESCO</td></tr>
+    <tr><td>SL.UEM.TOTL.ZS</td><td>Taxa de desemprego total</td><td>% força de trabalho</td><td>World Bank / OIT</td></tr>
+  </tbody>
+</table>
+<p>Além dos dados por país, foi coletado o <strong>agregado regional LCN</strong> (Latin America &amp;
+Caribbean) diretamente do Banco Mundial, permitindo análise da tendência conjunta da região. A
+amostra final, após limpeza, compreende <strong>10 países</strong> com cobertura temporal mínima de
+70% em ambos os indicadores: Argentina, Bolívia, Brasil, Chile, Colômbia, Costa Rica, Equador,
+México, Peru e Uruguai.</p>
+<p>Para garantir reprodutibilidade exata, os dados brutos foram congelados como um <em>snapshot</em>
+em CSV no repositório do grupo (<em>dados_brutos_paises.csv</em> e
+<em>dados_brutos_regional_LCN.csv</em>), o que assegura a reconstrução integral da análise mesmo
+diante de revisões futuras das séries do Banco Mundial.</p>
+
+<h2>4. Construção da Base de Dados</h2>
+<p>O pipeline de tratamento foi inteiramente implementado em Python e pode ser reproduzido a partir do
+código-fonte entregue. As etapas principais foram:</p>
+<ul>
+  <li><strong>Extração via API:</strong> os indicadores foram baixados via <em>wb.data.DataFrame()</em>
+  (wbgapi), especificando os códigos dos indicadores, os países e o período. O código busca os dados
+  diretamente da fonte original, sem intermediação manual.</li>
+  <li><strong>Reorganização do DataFrame:</strong> a API retorna os dados em formato <em>wide</em> (anos
+  como colunas). Aplicou-se <em>melt()</em> para transformar em formato longo, seguido de <em>pivot()</em>
+  para criar uma coluna por variável.</li>
+  <li><strong>Limpeza de índices:</strong> a string 'YR' foi removida dos rótulos de ano
+  (<em>str.replace('YR','')</em>) e os valores convertidos para inteiro.</li>
+  <li><strong>Tratamento de ausentes:</strong> países com menos de 70% de completude em qualquer dos
+  dois indicadores foram excluídos da amostra de análise, reduzindo de 18 para 10 países.</li>
+  <li><strong>Classificação por grupo:</strong> calculou-se a média histórica de gasto por país. Países
+  acima da mediana foram classificados como 'Alto Investimento'; os demais, como 'Baixo Investimento'.
+  A variável de grupo foi integrada à base via <em>merge</em>.</li>
+  <li><strong>Proveniência e reprodutibilidade:</strong> a coleta na API e a reorganização dos dados estão
+  documentadas no script <em>coletar_dados_api.py</em>; o notebook parte dos CSVs brutos versionados e
+  reconstrói toda a amostra de análise (filtro de cobertura, classificação por grupo e merge).</li>
+</ul>
+<p class="nota"><strong>Nota de reprodutibilidade:</strong> os dados tratados não são entregues. A
+execução sequencial das células do notebook reconstrói integralmente a base a partir dos dados brutos
+do Banco Mundial versionados no repositório.</p>
+
+<h2 class="quebra">5. Análise Descritiva</h2>
+
+<h3>5.1 Estatísticas Descritivas</h3>
+<table class="num">
+  <thead><tr><th>Estatística</th><th>Gasto Educação (% PIB)</th><th>Taxa Desemprego (%)</th></tr></thead>
+  <tbody>
+    <tr><td>N observações</td><td>130</td><td>130</td></tr>
+    <tr><td>Média</td><td>5,28</td><td>7,38</td></tr>
+    <tr><td>Desvio-padrão</td><td>1,06</td><td>3,00</td></tr>
+    <tr><td>Mínimo</td><td>2,77</td><td>3,24</td></tr>
+    <tr><td>1º Quartil</td><td>4,60</td><td>4,96</td></tr>
+    <tr><td>Mediana</td><td>5,06</td><td>6,86</td></tr>
+    <tr><td>3º Quartil</td><td>5,92</td><td>9,27</td></tr>
+    <tr><td>Máximo</td><td>7,67</td><td>20,02</td></tr>
+  </tbody>
+</table>
+<figcaption>Tabela 1. Estatísticas descritivas — base consolidada (10 países, 2010–2022).</figcaption>
+
+<h3>5.2 Evolução Temporal Regional</h3>
+<p>A Figura 1 apresenta a evolução do agregado regional. O gasto em educação cresceu consistentemente
+de 4,58% do PIB em 2010 para 4,95% em 2016, apresentando leve retração nos anos seguintes. O
+desemprego manteve-se relativamente estável até 2015 (6,0–6,7%), acelerou entre 2016 e 2019 —
+fortemente influenciado pela recessão brasileira — e atingiu o pico em 2020 (9,8%) com a pandemia de
+COVID-19, com recuperação gradual em 2021–2022.</p>
+<figure>
+  <img src="fig1_evolucao_regional.png" alt="Figura 1">
+  <figcaption>Figura 1. Evolução do gasto em educação e taxa de desemprego — agregado regional América
+  Latina e Caribe (LCN), 2010–2022. Eixo esquerdo: gasto em educação (% PIB); eixo direito: taxa de
+  desemprego (%). Área cinza: período COVID-19.</figcaption>
+</figure>
+
+<h3>5.3 Correlação entre as Variáveis</h3>
+<p>O diagrama de dispersão (Figura 2) apresenta a relação entre as duas variáveis para o painel completo
+(10 países × 13 anos = 130 observações). A reta de tendência linear apresenta coeficiente de Pearson
+r = 0,16 (p = 0,065), indicando correlação positiva fraca e marginalmente não-significativa ao nível de
+5%. Este resultado, aparentemente contrário à hipótese, reflete a dominância de choques
+macroeconômicos pontuais (principalmente COVID-19) que elevaram simultaneamente o desemprego em
+países com diferentes níveis de investimento educacional.</p>
+<figure>
+  <img src="fig2_scatter_correlacao.png" alt="Figura 2">
+  <figcaption>Figura 2. Diagrama de dispersão entre gasto em educação (% PIB) e taxa de desemprego (%)
+  para 10 países da América Latina, 2010–2022. Reta de tendência linear com coeficiente de Pearson
+  r = 0,16 (p = 0,065, N = 130).</figcaption>
+</figure>
+
+<h3>5.4 Comparativo entre as Principais Economias</h3>
+<p>A Figura 3 compara a trajetória das cinco maiores economias da região. Observa-se que o Brasil
+apresentou o maior crescimento em gasto educacional (de 5,6% a ~6,0% do PIB), mas também o maior
+aumento de desemprego, dominado pela recessão de 2015–2016 (de 4,8% para ~12%). O México e o
+Peru, com trajetórias distintas, mostram que a relação é influenciada por múltiplos fatores estruturais.</p>
+<figure>
+  <img src="fig3_top5_comparativo.png" alt="Figura 3">
+  <figcaption>Figura 3. Evolução do gasto em educação (painel esquerdo) e taxa de desemprego (painel
+  direito) nas 5 maiores economias da América Latina, 2010–2022.</figcaption>
+</figure>
+
+<h3>5.5 Análise por Grupos de Investimento</h3>
+<p>Os países foram classificados em dois grupos com base na média histórica de gasto em educação,
+usando como limiar a mediana dessas médias (≈ 4,9% do PIB; a mediana do conjunto de observações é
+≈ 5,06%): <strong>'Alto Investimento'</strong> (Argentina, Bolívia, Brasil, Costa Rica e México) e
+<strong>'Baixo Investimento'</strong> (Chile, Colômbia, Equador, Peru e Uruguai). A comparação das
+distribuições (Figura 4) mostra que os dois grupos apresentam taxas de desemprego praticamente
+idênticas: o grupo de 'Alto Investimento' registrou média de 7,4% (mediana 6,9%) e o de 'Baixo
+Investimento', média de 7,4% (mediana 6,8%). O teste de Mann-Whitney não detectou diferença
+estatisticamente significativa (U = 1.982, p = 0,547). A ausência de diferença entre os grupos é
+coerente com a fraca correlação agregada e reforça que o nível de gasto, isoladamente, não discrimina
+o desempenho do mercado de trabalho — resultado esperado dada a amostra limitada e a ausência de
+controles para variáveis de confusão.</p>
+<figure>
+  <img src="fig4_boxplot_grupos.png" alt="Figura 4">
+  <figcaption>Figura 4. Distribuição da taxa de desemprego por grupo de investimento em educação. O
+  losango indica a média. Teste Mann-Whitney: U = 1.982, p = 0,547.</figcaption>
+</figure>
+
+<h3>5.6 Heterogeneidade: Correlação por País</h3>
+<p>A análise individualizada (Figura 5) revela heterogeneidade expressiva nas correlações. Peru
+(r = -0,70) e Colômbia (r = -0,51) apresentam correlações negativas fortes, consistentes com a hipótese
+de que maior investimento em educação está associado a menor desemprego. Argentina (r = -0,04),
+Equador (r = -0,06) e Bolívia (r = -0,06) exibem correlações neutras. Por outro lado, Brasil (r = 0,26),
+México (r = 0,28), Uruguai (r = 0,40), Costa Rica (r = 0,41) e Chile (r = 0,49) mostram correlações
+positivas — provavelmente reflexo de que, nesses países, tanto o gasto em educação quanto o
+desemprego responderam positivamente a crises macroeconômicas (aumentos de gastos contracíclicos
+durante períodos de alto desemprego).</p>
+<figure>
+  <img src="fig5_correlacao_paises.png" alt="Figura 5">
+  <figcaption>Figura 5. Correlação de Pearson entre gasto em educação e taxa de desemprego por país
+  (2010–2022). Barras vermelhas: correlação negativa; barras azuis: positiva.</figcaption>
+</figure>
+
+<h2>6. Limitações e Próximos Passos</h2>
+<h3>6.1 Limitações da análise</h3>
+<ul>
+  <li><strong>Ausência de causalidade:</strong> a análise é puramente descritiva. Não é possível inferir
+  relação causal entre gasto em educação e desemprego a partir de correlações.</li>
+  <li><strong>Variáveis de confusão omitidas:</strong> crescimento do PIB, estrutura produtiva setorial,
+  qualidade (e não apenas volume) do gasto educacional e ciclos de negócios afetam o desemprego de
+  forma independente.</li>
+  <li><strong>Viés de seleção:</strong> países com baixa cobertura temporal foram excluídos, o que pode
+  não representar adequadamente os países mais pobres da região.</li>
+  <li><strong>Heterogeneidade estrutural:</strong> a América Latina é uma região muito diversa; tratá-la
+  como bloco homogêneo pode mascarar dinâmicas específicas de cada país.</li>
+  <li><strong>Horizonte temporal:</strong> treze anos pode ser insuficiente para capturar os retornos
+  educacionais de longo prazo, especialmente para o ensino superior.</li>
+</ul>
+<h3>6.2 Próximos passos</h3>
+<ul>
+  <li><strong>Dados em painel com efeitos fixos:</strong> controlar a heterogeneidade não observada entre
+  países e isolar o efeito <em>within-country</em> do investimento educacional.</li>
+  <li><strong>Variáveis de controle:</strong> incorporar PIB per capita, taxa de investimento total, índices
+  de qualidade educacional (PISA/TERCE) e abertura comercial.</li>
+  <li><strong>Análise de cointegração:</strong> investigar relações de longo prazo entre as séries
+  temporais por país.</li>
+  <li><strong>Desagregação por nível:</strong> diferenciar o impacto do investimento em educação
+  fundamental, médio e superior sobre distintos segmentos do mercado de trabalho.</li>
+  <li><strong>Desemprego formal vs. informal:</strong> capturar nuances do mercado latino-americano, onde
+  a informalidade é estrutural.</li>
+</ul>
+
+<h2>Referências</h2>
+<div class="refs">
+  <p>BECKER, G. S. <em>Human Capital: A Theoretical and Empirical Analysis, with Special Reference to
+  Education.</em> New York: Columbia University Press, 1964.</p>
+  <p>MINCER, J. <em>Schooling, Experience, and Earnings.</em> New York: NBER, 1974.</p>
+  <p>WORLD BANK. <em>World Development Indicators.</em> Disponível em: https://databank.worldbank.org.
+  Acesso em: jun. 2026.</p>
+  <p>CEPAL. <em>Panorama Social de América Latina 2023.</em> Santiago: CEPAL, 2023.</p>
+  <p>OIT. <em>Perspectivas Sociales y del Empleo en el Mundo 2024.</em> Ginebra: OIT, 2024.</p>
+</div>
+
+</body>
+</html>
