@@ -9,3 +9,6 @@ __pycache__/
 # Saídas intermediárias geradas pela execução (dados tratados NÃO são versionados)
 dados_educacao_desemprego_AL.csv
 dados_paises_AL.csv
+
+# Nota de trabalho interna (não faz parte da entrega)
+ERRATA_RELATORIO.md
